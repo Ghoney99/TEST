@@ -1,0 +1,122 @@
+/*================================*/
+/*Shared*/
+/*================================*/
+/*header{*/
+/*    width: 80%;*/
+/*    margin: auto;*/
+/*    background-color: #BFA6FF;*/
+/*}*/
+
+
+
+/*================================*/
+/*Calendar.html*/
+/*================================*/
+.divCalendarWrap{
+    width: 80%;
+    margin: auto;
+}
+#divCalendar{
+    min-width: 700px;
+    max-width: 1000px;
+    float: left;
+}
+#divCalendarInfoWrap{
+    min-width: 400px;
+    float: left;
+    background-color: #A6BFFF;
+    text-align: center;
+}
+#divCalendarInfo{
+    text-align: center;
+}
+
+/* 달력 테이블 ------------------- */
+.cal{
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+    width: 90%;
+    height: 550px;
+    table-layout: fixed;
+}
+.cal th{
+    font-size: 20px;
+}
+.cal button{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-transition: color 0.6s;
+    transition: color 0.6s;
+    border: solid 4px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background-color: #37474f;
+    text-align: center;
+}
+.cal button::before{
+    content: '';
+    box-shadow: inset 0 0 0 35px #37474f;
+    -webkit-transform: scale3d(0.9, 0.9, 1);
+    transform: scale3d(0.9, 0.9, 1);
+    -webkit-transition: box-shadow 0.6s, -webkit-transform 0.6s;
+    transition: box-shadow 0.6s, transform 0.6s;
+}
+.cal button:hover{
+    color: #37474F;
+    background: none;
+}
+.cal button:hover::before{
+    box-shadow: inset 0 0 0 2px #37474f;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+tbody td{
+    cursor: pointer;
+    text-align: center;
+    height: 50px;
+}
+.calYearTd{
+    text-align: center;
+}
+.calMonthTd{
+    text-align: center;
+}
+.calDayTh{
+    height: 80px;
+}
+#calMonth{
+    font-size: 30pt;
+}
+.choiceDay{
+    color: #FFFFFF;
+    background-color: #37474F;
+    padding: 4px 6px 4px 6px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: solid 4px #37474F;
+    text-decoration-color: #FFFFFF !important;
+}
+.today{
+    text-decoration: underline #37474F solid 4px;
+    padding: 4px 6px 4px 6px;
+}
+.sunday{
+    color: #DE4040 !important;
+    border-radius: 50px;
+    padding: 4px 6px 4px 6px;
+}
+.saturday{
+    color: #406DDE !important;
+    border-radius: 50px;
+    padding: 4px 6px 4px 6px;
+}
+
+/* 달력 날짜 선택시 추가 정보 ------------- */
+#divCalendarInfoWrap h3{
+    font-size: 15pt;
+}
+#divCalendarInfoWrap h2 {
+    font-size: 25pt;
+}

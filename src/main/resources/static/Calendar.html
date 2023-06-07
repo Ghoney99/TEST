@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/CalendarStyle.css">
+    <script src="js/scriptCalMonthChange.js"></script>
+    <title>Calendar</title>
+</head>
+    <body>
+        <div class="divCalendarWrap">
+            <div id="divCalendar">
+                <table class="cal">
+                    <thead>
+                        <tr>
+                            <td colspan="7" class="calYearTd"><span id="calYear"></span></td>
+                        </tr>
+                        <tr>
+                            <td onclick="calPrev();"><button>&#60;</button></td>
+                            <td colspan="5" class="calMonthTd"><span id="calMonth"></span></td>
+                            <td onclick="calNext();"><button>&#62;</button></td>
+                        </tr>
+                        <tr class="calDayTh">
+                            <th>SUN</th>
+                            <th>MON</th>
+                            <th>TUE</th>
+                            <th>WED</th>
+                            <th>THU</th>
+                            <th>FRI</th>
+                            <th>SAT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div id="divCalendarInfoWrap">
+                <div id="divCalendarInfo">
+                </div>
+                <p>DB 연결해서 여기에 정보 출력</p>
+                <p>버튼 누르면 writeMedicine.html로 이동</p>
+                <p>아이디랑 날짜 정보 전송</p>
+                <form method="POST" action="">
+                    <input type="button" value="+">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+/*================================*/
+/*Shared*/
+/*================================*/
+header{
+    width: 80%;
+    margin: auto;
+    background-color: #BFA6FF;
+}
+
+
+
+/*================================*/
+/*Calendar.html*/
+/*================================*/
+.divCalendarWrap{
+    width: 80%;
+    margin: auto;
+}
+#divCalendar{
+    width: 70%;
+    float: left;
+    background-color: #FFBFA6;
+}
+#divCalendarInfo{
+    width: 30%;
+    float: right;
+    background-color: #a6BFFF;
+}
+.divCalendarMonth{
+    display: block;
+    margin: auto;
+}
+
+
+
+/*================================*/
+/*Map.html*/
+/*================================*/
+#map{
+    width: 800px;
+    height: 600px;
+}
